@@ -1,27 +1,3 @@
-[8:47 pm, 15/12/2024] Sai Bro: # importing the required modules.
-import random
-import json
-import pickle
-import numpy as np
-import nltk
-nltk.download('wordnet')
-nltk.download('punkt_tab')
-
-from keras.models import Sequential
-from nltk.stem import WordNetLemmatizer
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
-
-
-lemmatizer = WordNetLemmatizer()
-
-# reading the json.intense file
-intents =  {
-    "intents": [
-        {"tag": "greeting", "patterns": ["Hi", "Hello", "Hey", "Good morning"], "responses": ["Hello!", "Hi there!", "Greetings!"]},
-        {"tag": "goodbye", "patterns": ["Bye", "Goodbye", "See you", "Take care"], "responses": ["Goodbye!", "See you later!", "Take care!"]},
-        {"tag": "thanks", "patterns": ["Thank you", "Thanks", "Thanks a lot…
-[8:48 pm, 15/12/2024] Sai Bro: # required modules
 import random
 import json
 import pickle
